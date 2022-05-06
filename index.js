@@ -4,7 +4,16 @@ var app = new Vue({
   data: function() {
     return {
       message: "Hello from JavaScript!",
-      movies: ["Pulp Fiction", "A River Runs Through It", "Drive", "The Neon Demon", "Interstellar"]
+      movies: ["Pulp Fiction", "A River Runs Through It", "Drive", "The Neon Demon", "Interstellar"],
+      movieTitle: ""
     };
+  },
+  methods: {
+    addMovie: function() {
+      console.log("adding movies...");
+      console.log(this.movies.push.movieTitle);
+      console.log(this.movieTitle = "");
+    }
   }
 });
+

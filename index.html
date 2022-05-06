@@ -13,7 +13,14 @@
   <div id="app">
     <h1>{{ message }}</h1>
     <p> {{ movies }} </p>
-  </div>
+    <br>
+    <div v-for="movie in movies">
+      <p>{{ movie }}</p>
+    </div>
+    <br>
+    <p> Movie Title: <input type="text" v-model="movieTitle"></p>
+    <button v-on:click="addMovie()">Add a new movie</button> </button>
+
 </body>
 
 </html>
